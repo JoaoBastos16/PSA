@@ -1,0 +1,908 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="03/22/25||17:44:26" using="Simscape Multibody Link Version 7.4" from="SolidWorks 32.1.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="robot_delta" uid="robot_delta" version="242">
+<AssemblyFile name="robot_delta.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="base_fixa-1" uid="base_fixa-1" grounded="true" entityUid="base_fixa*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.65903187188479972 0.85932644044982465 1.3035322839570278</Translation>
+</Transform>
+</Instance>
+<Instance name="Braco_inferior_v2-2" uid="Braco_inferior_v2-2" entityUid="Braco_inferior_v2*:*Default">
+<Transform>
+<Rotation>0.50000000000000444 0.44318941161402448 -0.74403168308426915 0 0.8591337850286288 0.5117510521946993 0.86602540378443604 -0.25587552609735198 0.42956689251431823</Rotation>
+<Translation>0.8862339000560272 0.88640357461261798 1.1290417678486353</Translation>
+</Transform>
+</Instance>
+<Instance name="Braco_superior-1" uid="Braco_superior-1" entityUid="Braco_superior*:*Default">
+<Transform>
+<Rotation>0.50000000000000411 4.0864917928337528e-16 -0.86602540378443627 7.7368667028565596e-16 -1 0 -0.86602540378443627 -7.9450335199737765e-16 -0.50000000000000422</Rotation>
+<Translation>0.54009661784695406 0.88432644044982478 1.2694919053794369</Translation>
+</Transform>
+</Instance>
+<Instance name="base_movel-1" uid="base_movel-1" entityUid="base_movel*:*Default">
+<Transform>
+<Rotation>0.50000000000000777 -6.1388660036773306e-16 -0.86602540378443427 -5.4405265015322612e-16 1.0000000000000002 -1.032702569292443e-15 0.86602540378443427 9.8770817913429454e-16 0.50000000000000777</Rotation>
+<Translation>0.63690486360987519 0.49123294929336869 1.3157098349822722</Translation>
+</Transform>
+</Instance>
+<Instance name="Braco_inferior_braço-1" uid="Braco_inferior_braço-1" entityUid="Braco_inferior_braço*:*Default">
+<Transform>
+<Rotation>0.49701579012392166 0.4465334913915005 -0.74403168308426937 -0.0057631576637964524 0.85911445488442417 0.5117510521946983 0.8677223578894554 -0.25006038165682171 0.42956689251431907</Rotation>
+<Translation>0.93387705792210729 0.88635939404469932 1.2116147710404159</Translation>
+</Transform>
+</Instance>
+<Instance name="Braco_superior-3" uid="Braco_superior-3" entityUid="Braco_superior*:*Default">
+<Transform>
+<Rotation>1 0 0 0 0.9999947149456111 -0.0032511660748295534 0 0.0032511660748295534 0.9999947149456111</Rotation>
+<Translation>0.6290318718847997 0.88432644044982467 1.4235322839570279</Translation>
+</Transform>
+</Instance>
+<Instance name="Braco_inferior_braço-4" uid="Braco_inferior_braço-4" entityUid="Braco_inferior_braço*:*Default">
+<Transform>
+<Rotation>0.50000000000000322 -0.44988945023259869 0.73999965038465176 3.2062026644741337e-15 0.85447799469961816 0.51948759039472669 -0.86602540378443682 -0.25974379519736263 0.4272389973498133</Rotation>
+<Translation>0.3943184516263063 0.88432644044982478 1.1939870959078198</Translation>
+</Transform>
+</Instance>
+<Instance name="Braco_inferior_braço-6" uid="Braco_inferior_braço-6" entityUid="Braco_inferior_braço*:*Default">
+<Transform>
+<Rotation>0.99999936409477597 0.0011277455580536093 1.8776755324190209e-14 -0.00096229217835750011 0.85328783569008226 -0.52143929987784632 -0.00058805085424784749 0.52143896829187164 0.85328837830061954</Rotation>
+<Translation>0.71686393685634364 0.88378587224810667 1.5875269091897208</Translation>
+</Transform>
+</Instance>
+<Instance name="Braco_inferior_braço-5" uid="Braco_inferior_braço-5" entityUid="Braco_inferior_braço*:*Default">
+<Transform>
+<Rotation>0.99999936409477586 0.0011277455580535349 1.8672238234762606e-14 -0.00096229217835749241 0.8532878356900826 -0.52143929987784599 -0.00058805085424771869 0.52143896829187109 0.85328837830061988</Rotation>
+<Translation>0.62153186700992813 0.8837858722481069 1.5875269091897226</Translation>
+</Transform>
+</Instance>
+<Instance name="Braco_inferior_braço-3" uid="Braco_inferior_braço-3" entityUid="Braco_inferior_braço*:*Default">
+<Transform>
+<Rotation>0.50000000000000366 -0.44988945023259785 0.73999965038465199 2.5058080610484978e-15 0.8544779946996186 0.51948759039472625 -0.86602540378443649 -0.25974379519736318 0.42723899734981352</Rotation>
+<Translation>0.44198448654951461 0.88432644044982478 1.1114271016254713</Translation>
+</Transform>
+</Instance>
+<Instance name="Braco_superior-2" uid="Braco_superior-2" entityUid="Braco_superior*:*Default">
+<Transform>
+<Rotation>0.50000000000000444 0.010968603366142894 0.86595593983769847 -1.771586349841314e-16 -0.99991978994330422 0.012665452212153811 0.86602540378443604 -0.0063327261060771162 -0.49995989497165655</Rotation>
+<Translation>0.74796712592264514 0.88432644044982478 1.217530381152371</Translation>
+</Transform>
+</Instance>
+<Instance name="Braco_inferior_v2-5" uid="Braco_inferior_v2-5" entityUid="Braco_inferior_v2*:*Default">
+<Transform>
+<Rotation>0.50000000000000433 -0.4498894502325973 0.73999965038465199 9.0617617576338461e-16 0.85447799469961827 0.51948759039472647 -0.86602540378443604 -0.25974379519736485 0.42723899734981324</Rotation>
+<Translation>0.59586892533051061 0.50152029882439597 1.3103523161562385</Translation>
+</Transform>
+</Instance>
+<Instance name="Braco_inferior_v2-1" uid="Braco_inferior_v2-1" entityUid="Braco_inferior_v2*:*Default">
+<Transform>
+<Rotation>0.50000000000000422 -0.44988945023259719 0.73999965038465232 7.7173510637518206e-16 0.85447799469961849 0.51948759039472625 -0.86602540378443627 -0.25974379519736479 0.42723899734981313</Rotation>
+<Translation>0.39431845162630663 0.88432644044982456 1.1939870959078198</Translation>
+</Transform>
+</Instance>
+<Instance name="Braco_inferior_v2-3" uid="Braco_inferior_v2-3" entityUid="Braco_inferior_v2*:*Default">
+<Transform>
+<Rotation>-1 1.087603550170398e-14 -1.8807405620410906e-14 -5.2652572363899611e-16 0.85328837830061988 0.52143929987784654 2.1719332979338216e-14 0.52143929987784654 -0.85328837830061988</Rotation>
+<Translation>0.70153187188479982 0.88379324921355262 1.5875314172081063</Translation>
+</Transform>
+</Instance>
+<Instance name="Braco_inferior_v2-4" uid="Braco_inferior_v2-4" entityUid="Braco_inferior_v2*:*Default">
+<Transform>
+<Rotation>0.50000000000000488 0.44318941161402414 -0.74403168308426892 -3.1398494915180203e-16 0.85913378502862903 0.51175105219469885 0.86602540378443571 -0.2558755260973517 0.4295668925143189</Rotation>
+<Translation>0.68618689591263449 0.5015202988243963 1.241068818830892</Translation>
+</Transform>
+</Instance>
+<Instance name="Braco_inferior_braço-2" uid="Braco_inferior_braço-2" entityUid="Braco_inferior_braço*:*Default">
+<Transform>
+<Rotation>0.49701579012392194 0.44653349139150156 -0.74403168308426859 -0.0057631576637973917 0.85911445488442373 0.51175105219469919 0.86772235788945529 -0.25006038165682171 0.42956689251431956</Rotation>
+<Translation>0.88621102299889909 0.88635939404469921 1.1290547767580676</Translation>
+</Transform>
+</Instance>
+<Instance name="Braco_inferior_v2-6" uid="Braco_inferior_v2-6" entityUid="Braco_inferior_v2*:*Default">
+<Transform>
+<Rotation>1 -1.084827992608863e-14 -1.8807405620410887e-14 5.5020923374461076e-16 -0.85328837830061988 0.52143929987784654 -2.1704860131421634e-14 -0.52143929987784654 -0.85328837830061988</Rotation>
+<Translation>0.62102664187479184 0.50152029882439586 1.3539267594133497</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Coincident name="Coincident1">
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>base_fixa-1</Uid>
+</InstancePath>
+<Position>-0.096435254037845364 0.025000000000000022 -0.073011521747890384</Position>
+<Axis>-0.50000000000000455 0 0.86602540378443627</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>Braco_superior-1</Uid>
+</InstancePath>
+<Position>0.059999999999999831 0 0</Position>
+<Axis>-1 -1.186980055776504e-16 -1.1102230246251565e-16</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>base_fixa-1</Uid>
+</InstancePath>
+<Position>-0.097595508075689619 0 -0.09100190280465692</Position>
+<Axis>-0.50000000000000033 0 0.86602540378443871</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Braco_superior-1</Uid>
+</InstancePath>
+<Position>0.059999999999999831 0 0</Position>
+<Axis>1 1.186980055776504e-16 1.1102230246251565e-16</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident3">
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>base_fixa-1</Uid>
+</InstancePath>
+<Position>0.086770190528384195 0.025000000000000022 -0.089751902804656947</Position>
+<Axis>0.50000000000000455 0 0.86602540378443627</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>Braco_superior-2</Uid>
+</InstancePath>
+<Position>0.059999999999999831 0 0</Position>
+<Axis>-1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident4">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>base_fixa-1</Uid>
+</InstancePath>
+<Position>0.11027499999999979 0 -0.029040378577591008</Position>
+<Axis>-0.49999999999999961 0 -0.86602540378443893</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Braco_superior-2</Uid>
+</InstancePath>
+<Position>0.059999999999999831 0 0</Position>
+<Axis>1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident5">
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>base_fixa-1</Uid>
+</InstancePath>
+<Position>0.030000000000000027 0.025000000000000022 0.12000000000000011</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>Braco_superior-3</Uid>
+</InstancePath>
+<Position>0.059999999999999942 0 0</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident6">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>base_fixa-1</Uid>
+</InstancePath>
+<Position>0.030000000000000027 0 0.12999999999999989</Position>
+<Axis>-1 0 -3.4694469519536142e-16</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Braco_superior-3</Uid>
+</InstancePath>
+<Position>0.059999999999999942 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident7">
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>Braco_superior-1</Uid>
+</InstancePath>
+<Position>0.040000000000000147 1.1102230246251565e-16 0.16399999999999992</Position>
+<Axis>-1 -1.186980055776504e-16 -1.1102230246251565e-16</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>Braco_inferior_v2-1</Uid>
+</InstancePath>
+<Position>0.07999999999999996 1.6653345369377348e-16 0</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident8">
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>Braco_superior-2</Uid>
+</InstancePath>
+<Position>0.039999999999999813 0 0.16400000000000003</Position>
+<Axis>-1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>Braco_inferior_v2-2</Uid>
+</InstancePath>
+<Position>0.080000000000000071 -2.2204460492503131e-16 0</Position>
+<Axis>-1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident9">
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>Braco_superior-3</Uid>
+</InstancePath>
+<Position>0.040000000000000036 0 0.16400000000000015</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>Braco_inferior_v2-3</Uid>
+</InstancePath>
+<Position>0.07999999999999996 2.2204460492503131e-16 2.2204460492503131e-16</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Distance name="Distance1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Braco_inferior_v2-1</Uid>
+</InstancePath>
+<Position>0.039999999999999925 0 0</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Braco_superior-1</Uid>
+</InstancePath>
+<Position>0.025000000000000133 0 0</Position>
+<Axis>-1 -1.186980055776504e-16 -1.1102230246251565e-16</Axis>
+</ConstraintGeometry>
+</Distance>
+<Distance name="Distance2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Braco_inferior_v2-3</Uid>
+</InstancePath>
+<Position>0.040000000000000036 2.2204460492503131e-16 1.1102230246251565e-16</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Braco_superior-3</Uid>
+</InstancePath>
+<Position>0.025000000000000022 0 0</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Distance>
+<Distance name="Distance3">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Braco_inferior_v2-2</Uid>
+</InstancePath>
+<Position>0.040000000000000036 -2.2204460492503131e-16 0</Position>
+<Axis>-1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Braco_superior-2</Uid>
+</InstancePath>
+<Position>0.039999999999999813 1.1102230246251565e-16 -1.1102230246251565e-16</Position>
+<Axis>1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+</Distance>
+<Distance name="Distance4">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Braco_inferior_v2-1</Uid>
+</InstancePath>
+<Position>0.039999999999999925 0 0</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>base_movel-1</Uid>
+</InstancePath>
+<Position>-0.047657716544280193 0.01028734953102628 -0.0061117375652509631</Position>
+<Axis>-0.4999999999999889 0 -0.86602540378444504</Axis>
+</ConstraintGeometry>
+</Distance>
+<Parallel name="Parallel1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>base_fixa-1</Uid>
+</InstancePath>
+<Position>0.0086602540378452053 0.050000000000000044 -0.0050000000000005596</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>base_movel-1</Uid>
+</InstancePath>
+<Position>0 0.020000000000000018 0</Position>
+<Axis>0 1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+</Parallel>
+<Concentric name="Concentric1">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Braco_inferior_v2-2</Uid>
+</InstancePath>
+<Position>0.087666034923207903 -2.2204460492503131e-16 -0.0099999999999998423</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Braco_inferior_braço-1</Uid>
+</InstancePath>
+<Position>-0.0076660349232076097 -2.2204460492503131e-16 -0.010000000000000064</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident15">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Braco_inferior_v2-2</Uid>
+</InstancePath>
+<Position>0.087666034923207903 -2.2204460492503131e-16 -0.0099999999999998423</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Braco_inferior_braço-1</Uid>
+</InstancePath>
+<Position>-0.0076660349232076097 -2.2204460492503131e-16 -0.010000000000000064</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Braco_inferior_braço-1</Uid>
+</InstancePath>
+<Position>-0.0076660349232078318 -0.44800000000000006 -0.010000000000000009</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Braco_inferior_v2-4</Uid>
+</InstancePath>
+<Position>0.087666034923207903 0 -0.010000000000000064</Position>
+<Axis>1.1102230246251565e-16 0 1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident16">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Braco_inferior_braço-1</Uid>
+</InstancePath>
+<Position>-0.0076660349232078318 -0.44800000000000006 -0.010000000000000009</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Braco_inferior_v2-4</Uid>
+</InstancePath>
+<Position>0.087666034923207903 0 -0.010000000000000064</Position>
+<Axis>-1.1102230246251565e-16 0 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric3">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>base_movel-1</Uid>
+</InstancePath>
+<Position>0.0049999999999998934 0.01028734953102628 -0.079999999999999405</Position>
+<Axis>-1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Braco_inferior_v2-4</Uid>
+</InstancePath>
+<Position>0.079999999999999849 0 0</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Distance name="Distance7">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>base_movel-1</Uid>
+</InstancePath>
+<Position>-0.0049999999999996714 0.01028734953102628 -0.079999999999999405</Position>
+<Axis>-1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Braco_inferior_v2-4</Uid>
+</InstancePath>
+<Position>0.040000000000000036 0 0</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Distance>
+<Concentric name="Concentric4">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Braco_inferior_v2-4</Uid>
+</InstancePath>
+<Position>-0.0076660349232078318 1.1102230246251565e-16 -0.010000000000000009</Position>
+<Axis>1.1102230246251565e-16 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Braco_inferior_braço-2</Uid>
+</InstancePath>
+<Position>-0.0076660349232078318 -0.44800000000000006 -0.010000000000000064</Position>
+<Axis>1.1102230246251565e-16 0 1.0000000000000002</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident18">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Braco_inferior_v2-4</Uid>
+</InstancePath>
+<Position>-0.0076660349232078318 1.1102230246251565e-16 -0.010000000000000009</Position>
+<Axis>-1.1102230246251565e-16 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Braco_inferior_braço-2</Uid>
+</InstancePath>
+<Position>-0.0076660349232078318 -0.44800000000000006 -0.010000000000000064</Position>
+<Axis>-1.1102230246251565e-16 0 -1.0000000000000002</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric5">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Braco_inferior_v2-2</Uid>
+</InstancePath>
+<Position>-0.0076660349232078318 0 -0.010000000000000064</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Braco_inferior_braço-2</Uid>
+</InstancePath>
+<Position>-0.0076660349232078318 0 -0.010000000000000009</Position>
+<Axis>1.1102230246251565e-16 0 1.0000000000000002</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident19">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Braco_inferior_v2-2</Uid>
+</InstancePath>
+<Position>-0.0076660349232078318 0 -0.010000000000000064</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Braco_inferior_braço-2</Uid>
+</InstancePath>
+<Position>-0.0076660349232078318 0 -0.010000000000000009</Position>
+<Axis>-1.1102230246251565e-16 0 -1.0000000000000002</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric6">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Braco_inferior_v2-1</Uid>
+</InstancePath>
+<Position>0.08766603492320757 0 -0.0099999999999997868</Position>
+<Axis>0 -2.2204460492503131e-16 1.0000000000000002</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Braco_inferior_braço-3</Uid>
+</InstancePath>
+<Position>-0.0076660349232077207 1.1102230246251565e-16 -0.0099999999999997868</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident20">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Braco_inferior_v2-1</Uid>
+</InstancePath>
+<Position>0.087666034923207792 0 0.010000000000000231</Position>
+<Axis>0 -2.2204460492503131e-16 1.0000000000000002</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Braco_inferior_braço-3</Uid>
+</InstancePath>
+<Position>-0.0076660349232079428 1.1102230246251565e-16 0.010000000000000231</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric7">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Braco_inferior_braço-3</Uid>
+</InstancePath>
+<Position>-0.0076660349232079428 -0.44800000000000006 -0.0099999999999997868</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Braco_inferior_v2-5</Uid>
+</InstancePath>
+<Position>0.087666034923208125 0 -0.0099999999999997868</Position>
+<Axis>0 -1.6653345369377348e-16 1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident21">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Braco_inferior_braço-3</Uid>
+</InstancePath>
+<Position>-0.0076660349232079428 -0.44800000000000006 -0.0099999999999997868</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Braco_inferior_v2-5</Uid>
+</InstancePath>
+<Position>0.087666034923208125 0 -0.0099999999999997868</Position>
+<Axis>0 1.6653345369377348e-16 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric8">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>base_movel-1</Uid>
+</InstancePath>
+<Position>-0.0426577165442803 0.01028734953102628 0.002548516472593465</Position>
+<Axis>-0.4999999999999889 0 -0.86602540378444504</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Braco_inferior_v2-5</Uid>
+</InstancePath>
+<Position>0.080000000000000293 0 0</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Distance name="Distance8">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Braco_inferior_v2-5</Uid>
+</InstancePath>
+<Position>0.040000000000000258 0 0</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>base_movel-1</Uid>
+</InstancePath>
+<Position>-0.0426577165442803 0.01028734953102628 0.002548516472593465</Position>
+<Axis>0.4999999999999889 0 0.86602540378444504</Axis>
+</ConstraintGeometry>
+</Distance>
+<Concentric name="Concentric9">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Braco_inferior_v2-1</Uid>
+</InstancePath>
+<Position>-0.0076660349232079428 0 -0.0099999999999997868</Position>
+<Axis>0 -2.2204460492503131e-16 1.0000000000000002</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Braco_inferior_braço-4</Uid>
+</InstancePath>
+<Position>-0.0076660349232079428 0 -0.010000000000000231</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident24">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Braco_inferior_v2-1</Uid>
+</InstancePath>
+<Position>-0.0076660349232079428 0 -0.0099999999999997868</Position>
+<Axis>0 2.2204460492503131e-16 -1.0000000000000002</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Braco_inferior_braço-4</Uid>
+</InstancePath>
+<Position>-0.0076660349232079428 0 -0.010000000000000231</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric11">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Braco_inferior_v2-5</Uid>
+</InstancePath>
+<Position>-0.0076660349232076097 0 -0.010000000000000231</Position>
+<Axis>0 -1.6653345369377348e-16 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Braco_inferior_braço-4</Uid>
+</InstancePath>
+<Position>-0.0076660349232079428 -0.44800000000000012 -0.010000000000000009</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident25">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Braco_inferior_v2-5</Uid>
+</InstancePath>
+<Position>-0.0076660349232076097 0 -0.010000000000000231</Position>
+<Axis>0 1.6653345369377348e-16 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Braco_inferior_braço-4</Uid>
+</InstancePath>
+<Position>-0.0076660349232079428 -0.44800000000000012 -0.010000000000000009</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric12">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Braco_inferior_v2-3</Uid>
+</InstancePath>
+<Position>0.087666034923207792 2.2204460492503131e-16 -0.010000000000000009</Position>
+<Axis>0 0 1.0000000000000002</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Braco_inferior_braço-5</Uid>
+</InstancePath>
+<Position>-0.0076660349232077207 0 -0.0099999999999998979</Position>
+<Axis>0 -1.1102230246251565e-16 1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident26">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Braco_inferior_v2-3</Uid>
+</InstancePath>
+<Position>0.087666034923207792 0 0.01000000000000012</Position>
+<Axis>0 0 1.0000000000000002</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Braco_inferior_braço-5</Uid>
+</InstancePath>
+<Position>-0.0076660349232077207 0 -0.0099999999999998979</Position>
+<Axis>0 -1.1102230246251565e-16 1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric13">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Braco_inferior_v2-3</Uid>
+</InstancePath>
+<Position>-0.0076660349232079428 0 -0.010000000000000009</Position>
+<Axis>0 0 1.0000000000000002</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Braco_inferior_braço-6</Uid>
+</InstancePath>
+<Position>-0.0076660349232076097 -2.2204460492503131e-16 -0.010000000000000009</Position>
+<Axis>0 1.1102230246251565e-16 1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident29">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Braco_inferior_v2-3</Uid>
+</InstancePath>
+<Position>-0.0076660349232078318 0 0.01000000000000012</Position>
+<Axis>0 0 1.0000000000000002</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Braco_inferior_braço-6</Uid>
+</InstancePath>
+<Position>-0.0076660349232076097 -2.2204460492503131e-16 -0.010000000000000009</Position>
+<Axis>0 -1.1102230246251565e-16 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric14">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>base_movel-1</Uid>
+</InstancePath>
+<Position>0.042657716544280744 0.01028734953102628 0.002548516472593465</Position>
+<Axis>0.49999999999998895 0 -0.86602540378444515</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Braco_inferior_v2-6</Uid>
+</InstancePath>
+<Position>0.07999999999999996 0 0</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Distance name="Distance9">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Braco_inferior_v2-6</Uid>
+</InstancePath>
+<Position>0.040000000000000036 0 0</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>base_movel-1</Uid>
+</InstancePath>
+<Position>0.042657716544280744 0.01028734953102628 0.002548516472593465</Position>
+<Axis>-0.49999999999998895 0 0.86602540378444515</Axis>
+</ConstraintGeometry>
+</Distance>
+<Concentric name="Concentric15">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Braco_inferior_braço-5</Uid>
+</InstancePath>
+<Position>-0.0076660349232077207 -0.44799999999999995 -0.010000000000000009</Position>
+<Axis>0 -1.1102230246251565e-16 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Braco_inferior_v2-6</Uid>
+</InstancePath>
+<Position>-0.0076660349232077207 0 -0.010000000000000009</Position>
+<Axis>0 0 1.0000000000000002</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident30">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Braco_inferior_braço-5</Uid>
+</InstancePath>
+<Position>-0.0076660349232077207 -0.44799999999999995 -0.010000000000000009</Position>
+<Axis>0 1.1102230246251565e-16 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Braco_inferior_v2-6</Uid>
+</InstancePath>
+<Position>-0.0076660349232077207 0 0.01000000000000012</Position>
+<Axis>0 0 1.0000000000000002</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric16">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Braco_inferior_braço-6</Uid>
+</InstancePath>
+<Position>-0.0076660349232077207 -0.44800000000000018 -0.010000000000000009</Position>
+<Axis>0 1.1102230246251565e-16 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Braco_inferior_v2-6</Uid>
+</InstancePath>
+<Position>0.087666034923207903 -2.2204460492503131e-16 -0.010000000000000009</Position>
+<Axis>0 0 1.0000000000000002</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident31">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Braco_inferior_braço-6</Uid>
+</InstancePath>
+<Position>-0.0076660349232077207 -0.44800000000000018 -0.010000000000000009</Position>
+<Axis>0 -1.1102230246251565e-16 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Braco_inferior_v2-6</Uid>
+</InstancePath>
+<Position>0.087666034923208014 0 0.0099999999999998979</Position>
+<Axis>0 0 1.0000000000000002</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="Braco_inferior_braço" uid="Braco_inferior_braço*:*Default" version="192">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Braco_inferior_braço.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.033973238046581179</Mass>
+<CenterOfMass>-0.0076662693097972372 -0.22400000000000037 -8.7905694023502509e-09</CenterOfMass>
+<Inertia>0.0009587493507097392 9.0324014109057367e-07 0.00095864452244657291 0 4.2453058846816388e-12 0</Inertia>
+</MassProperties>
+<GeometryFile name="Braco_inferior_braço_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Braco_inferior_v2" uid="Braco_inferior_v2*:*Default" version="172">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Braco_inferior_v2.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.025132741228718343</Mass>
+<CenterOfMass>0.040000000000000001 0 0</CenterOfMass>
+<Inertia>8.9011791851710816e-07 3.6065075909204149e-05 3.596035615408449e-05 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Braco_inferior_v2_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Braco_superior" uid="Braco_superior*:*Default" version="120">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Braco_superior.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.03773990082556581</Mass>
+<CenterOfMass>0.031563513242489946 0 0.055264944657546569</CenterOfMass>
+<Inertia>0.00011929942554324779 0.0001233812061705166 5.3961402967080132e-06 0 -1.9532243715434434e-06 0</Inertia>
+</MassProperties>
+<GeometryFile name="Braco_superior_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="base_fixa" uid="base_fixa*:*Default" version="159">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="base_fixa.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>3.2734645587320919</Mass>
+<CenterOfMass>0 0.025000000000000001 -1.4093794082816948e-05</CenterOfMass>
+<Inertia>0.020728382633554792 0.040101764676283604 0.020728382633555267 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="base_fixa_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="base_movel" uid="base_movel*:*Default" version="289">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="base_movel.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.053583942880683674</Mass>
+<CenterOfMass>0 0.010037285208017856 -0.027853669772469388</CenterOfMass>
+<Inertia>2.2067688345984715e-05 4.0608720228543778e-05 2.2066716554003736e-05 1.4729600792980299e-12 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="base_movel_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>

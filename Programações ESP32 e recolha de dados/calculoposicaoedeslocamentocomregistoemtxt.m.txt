@@ -1,0 +1,74 @@
+clear all;
+clc;
+close all
+
+porta = "COM3";
+s = serialport(porta, 115200);
+flush(s)
+
+data = [];
+velocities = [];
+displacements = [];
+
+window_size = 21; % Must be odd for Simpson's rule
+dt = 0.01;        % Sampling interval in seconds
+
+% Define output file names
+acc_file = 'acceleration.txt';
+vel_file = 'velocity.txt';
+disp_file = 'displacement.txt';
+
+% Ensure data is saved on exit
+cleanupObj = onCleanup(@() save_data());
+
+while true
+    if s.NumBytesAvailable > 0
+        rawLine = readline(s);
+        writeline(s, "x");
+        numericValues = str2double(split(strtrim(rawLine), ";"))';
+        
+        if numel(numericValues) ~= 3
+            warning('Invalid data received. Skipping.');
+            continue;
+        end
+
+        data = [data; numericValues];
+        fprintf('Aceleracao [m/s^2]\n');
+        rows_to_show = min(3, size(data, 1));
+        disp(data(end - rows_to_show + 1:end, :));
+        disp("-------------------");
+
+        if size(data, 1) >= window_size
+            recent_data = data(end - window_size + 1:end, :);
+            v_x = simpson_integrate(recent_data(:, 1), dt);
+            v_y = simpson_integrate(recent_data(:, 2), dt);
+            v_z = simpson_integrate(recent_data(:, 3), dt);
+            velocities = [velocities; v_x, v_y, v_z];
+            fprintf('Velocidade [m/s]\n');
+            fprintf('%.3f %.3f %.3f\n', v_x, v_y, v_z);
+            fprintf('Soma total Vx [m/s]: %.3f\n', sum(velocities(:, 1)));
+            disp("-------------------");
+
+            if size(velocities, 1) >= window_size
+                recent_velocities = velocities(end - window_size + 1:end, :);
+                d_x = simpson_integrate(recent_velocities(:, 1), dt);
+                d_y = simpson_integrate(recent_velocities(:, 2), dt);
+                d_z = simpson_integrate(recent_velocities(:, 3), dt);
+                displacements = [displacements; d_x, d_y, d_z];
+                fprintf('Deslocamento [m]\n');
+                fprintf('%.3f %.3f %.3f\n', d_x, d_y, d_z);
+                disp("-------------------");
+            end
+        end
+    end
+    pause(dt);
+end
+
+function save_data()
+    global data velocities displacements acc_file vel_file disp_file
+    fprintf('Saving data...\n');
+    writematrix(data, acc_file, 'Delimiter', 'tab');
+    writematrix(velocities, vel_file, 'Delimiter', 'tab');
+    writematrix(displacements, disp_file, 'Delimiter', 'tab');
+    fprintf('Data saved to %s, %s, and %s\n', acc_file, vel_file, disp_file);
+end
